@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo de Tienda de Ropa">
+            </div>
+            <h1>Tienda de Ropa</h1>
+            <nav>
+                <ul>
+                    <li><a href="#mujeres">Mujeres</a></li>
+                    <li><a href="#hombres">Hombres</a></li>
+                    <li><a href="#ninos">Niños</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="mujeres" class="section">
+            <h2>Ropa para Mujeres</h2>
+            <div class="carousel">
+                <!-- Imágenes de productos para mujeres -->
+                <div><img src="mujeres1.jpg" alt="Ropa para Mujeres 1"></div>
+                <div><img src="mujeres2.jpg" alt="Ropa para Mujeres 2"></div>
+                <div><img src="mujeres3.jpg" alt="Ropa para Mujeres 3"></div>
+            </div>
+            <a href="#" class="cta-button">Compra ahora</a>
+        </section>
+        
+        <section id="hombres" class="section">
+            <h2>Ropa para Hombres</h2>
+            <div class="carousel">
+                <!-- Imágenes de productos para hombres -->
+                <div><img src="hombres1.jpg" alt="Ropa para Hombres 1"></div>
+                <div><img src="hombres2.jpg" alt="Ropa para Hombres 2"></div>
+                <div><img src="hombres3.jpg" alt="Ropa para Hombres 3"></div>
+            </div>
+            <a href="#" class="cta-button">Compra ahora</a>
+        </section>
+        
+        <section id="ninos" class="section">
+            <h2>Ropa para Niños</h2>
+            <div class="carousel">
+                <!-- Imágenes de productos para niños -->
+                <div><img src="ninos1.jpg" alt="Ropa para Niños 1"></div>
+                <div><img src="ninos2.jpg" alt="Ropa para Niños 2"></div>
+                <div><img src="ninos3.jpg" alt="Ropa para Niños 3"></div>
+            </div>
+            <a href="#" class="cta-button">Compra ahora</a>
+        </section>
+        
+        <section id="ofertas" class="section">
+            <h2>Ofertas Especiales</h2>
+            <div class="carousel">
+                <!-- Imágenes de productos en oferta -->
+                <div><img src="ofertas1.jpg" alt="Oferta 1"></div>
+                <div><img src="ofertas2.jpg" alt="Oferta 2"></div>
+                <div><img src="ofertas3.jpg" alt="Oferta 3"></div>
+            </div>
+            <a href="#" class="cta-button">Ver Ofertas</a>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tienda de Ropa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+    </script>
+</body>
+</html>
